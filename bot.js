@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '#'
+const prefix = '$'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame('MÁGNUS');
+client.user.setGame('Ligtining');
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -44,7 +44,7 @@ client.on("message", message => {
   message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
  m.send(`${argresult}\n ${m}`);
 })
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : عدد الاعضاء المستلمين`); 
+ message.channel.send(`**Broadcast begin send to** \`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` **members....**`); 
  message.delete(); 
 };     
 });
@@ -94,7 +94,7 @@ client.on('message' , message => {
               `${codes}` + "**"
               )
             })
-            message.channel.send(`لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عضو`)
+            message.channel.send(` **Broadcast begin send to** ${message.guild.members.filter(m => m.roles.get(role.id)).size} **members....** `)
         }
     });
 	

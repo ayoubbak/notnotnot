@@ -195,7 +195,7 @@ client.on("message", message => {
       } else
     if(message.content.startsWith('$setSt')) {
 		if(!chanarg) return message.channel.send("**Please include args to Set | :x:**")
-    client.user.setGame(chanarg, "https://www.twitch.tv/bakkariayoub");
+    client.user.setGame(chanarg, "https://www.twitch.tv/ ! Pe | .MrG_YT");
     message.channel.send(`**Done Set Streaming ${chanarg} | :white_check_mark:**`)
       } else
     if(message.content.startsWith('$setName')) {
